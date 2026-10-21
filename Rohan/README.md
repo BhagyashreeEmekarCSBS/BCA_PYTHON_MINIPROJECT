@@ -1,361 +1,124 @@
-# StoreRate — Modern Store Rating & Governance Platform
+# 🚦 Mini Project 4: Urban Traffic Flow Optimization & Volume Prediction System
 
-A full-stack, enterprise-grade store rating and administrative governance platform built with **React 19**, **Express 5**, **Sequelize 6**, and **MySQL**.
-
----
-
-## 🌟 Key Features
-
-### 1. 🛡️ Role-Based Access Control (RBAC)
-- **System Administrator**: Full platform governance, user management (create, search, filter, sort), store registry oversight, and executive analytics.
-- **Store Owner**: Store dashboard displaying registered store information, average rating, total ratings, and customer rating breakdown.
-- **Normal User / Shopper**: Browse stores, search by name or address, submit ratings (1–5 stars), and update previously submitted ratings.
-
-### 2. 📊 Executive Admin Dashboard
-- **Off-White Design Palette**: Built with a clean executive aesthetic (`#F8F9FA` background, `#FFFFFF` cards, `#E2E8F0` borders) plus a one-click dark mode toggle.
-- **KPI Metrics Cards**: Total Users (Shoppers/Owners/Admins split), Total Stores (Rated vs. Unrated), Total Ratings (Overall Platform Average), and Review Coverage Rate with smooth count-up animations.
-- **PowerPoint-Style Architecture & Process Flow Diagram**: Visual 4-stage pipeline (Discovery ➔ Submission ➔ Intelligence ➔ Governance).
-- **Interactive Visualizations**:
-  - **Store Rating Distribution Bar Chart**: Proportional breakdown (5★ Emerald, 4★ Teal, 3★ Indigo, 2★ Amber, 1★ Rose, Unrated).
-  - **User Ecosystem Segmented Bar**: Visual share of Shoppers, Store Owners, and Admins.
-  - **Top-Rated Stores Leaderboard**: Visual podium cards (#1, #2, #3) with average scores and rating progress indicators.
-  - **Quick Action Hub**: Direct shortcuts to User Registry, Store Registry, and Security settings.
-
-### 3. ⭐ Star Rating & Review Engine
-- Interactive 5-star rating selector with hover preview and score labels.
-- Live submission with instant recalculation of store average ratings.
-- Automatic detection of prior ratings allowing users to seamlessly edit their rating.
-
-### 4. 🔒 Strict Security & Validation
-- **Name Constraints**: Exact range between 5 and 20 characters with live character counter UI.
-- **Password Constraints**: 8 to 16 characters, requiring at least one uppercase letter and one special character (`!@#$%^&*`).
-- **Email Validation**: RFC-compliant email formatting and uniqueness checks.
-- **Address Constraints**: Maximum 400 characters.
-- **Authentication**: JWT token authorization in `Bearer <token>` headers, bcrypt password hashing.
+An end-to-end Machine Learning and Urban Data Science project for analyzing historical freeway traffic patterns, isolating major congestion drivers (weather, hour, day of week, holidays), and forecasting real-time traffic volume with **96.07% accuracy ($R^2 = 0.9607$)**.
 
 ---
 
-## 🛠️ Technology Stack
+## 📌 Project Overview / प्रोजेक्ट का विवरण
 
-| Layer | Technologies |
-|---|---|
-| **Frontend** | React 19, Vite, React Router DOM, Axios, Lucide Icons, Pure CSS Design System |
-| **Backend** | Node.js, Express 5, Sequelize 6 ORM |
-| **Database** | MySQL 8.0 |
-| **Proxy & Gateway** | Nginx Alpine (Reverse Proxy & Static Web Server) |
-| **Containerization** | Docker, Docker Compose, Multi-stage builds |
-| **Auth & Security** | JSON Web Tokens (JWT), bcryptjs, express-validator |
+Increasing traffic congestion is a major problem in urban areas. Traffic volume depends on multiple interrelated dynamic factors such as time of day, weather conditions, temperature, holidays, and day of the week.
 
----
-
-## 🐳 Docker Production Setup (Recommended)
-
-The entire application stack (MySQL database, Express backend API, and Nginx-powered React SPA) is fully containerized with automated health checks, persistent data volumes, and internal Docker networking.
-
-### Architecture Overview
-- **`storerate-frontend`**: Nginx Alpine container serving the production React 19 bundle and reverse-proxying `/api` requests to `http://backend:5000`.
-- **`storerate-backend`**: Node 18 Alpine container running Express 5, listening internally on port 5000 and connecting to MySQL via Docker DNS `mysql:3306`.
-- **`storerate-mysql`**: MySQL 8.0 container isolated from host ports, backed by a persistent named volume `mysql_data`.
-- **`storerate-network`**: Dedicated Docker bridge network for secure inter-service communication.
-
-### Prerequisites
-- [Docker Desktop](https://www.docker.com/products/docker-desktop/) installed and running.
-
-### 1. Configure Environment Variables
-Copy `.env.example` to `.env` in the root directory:
-```bash
-cp .env.example .env
-```
-Default ports and credentials:
-```env
-FRONTEND_PORT=80
-BACKEND_PORT=5001
-DB_HOST=mysql
-DB_PORT=3306
-DB_NAME=storerate_db
-DB_USER=storerate_user
-DB_PASSWORD=storerate_password
-MYSQL_ROOT_PASSWORD=root_password
-JWT_SECRET=your_super_secret_jwt_key_change_this_in_production_2024
-JWT_EXPIRES_IN=24h
-```
-
-### 2. Build and Start the Stack
-From the project root (`R:\Project 1`), run:
-```bash
-docker compose up -d --build
-```
-
-### 3. Verify Container Status
-Check that all three containers are healthy:
-```bash
-docker compose ps
-```
-Expected output:
-```text
-NAME                 IMAGE               STATUS                    PORTS
-storerate-backend    project1-backend    Up (healthy)              0.0.0.0:5001->5000/tcp
-storerate-frontend   project1-frontend   Up (healthy)              0.0.0.0:80->80/tcp
-storerate-mysql      mysql:8.0           Up (healthy)              3306/tcp
-```
-
-### 4. Access URLs
-local host url after running the projects
-
-
-### 5. Managing the Compose Stack
-- **View Live Logs**:
-  ```bash
-  docker compose logs -f
-  # Or inspect a specific service:
-  docker compose logs -f backend
-  ```
-- **Stop Containers** (Preserves MySQL database data volume):
-  ```bash
-  docker compose down
-  ```
-- **Restart Stack**:
-  ```bash
-  docker compose restart
-  ```
-
-### 6. Troubleshooting Port Conflicts
-If port `80` or `5001` is already in use on your host machine:
-1. Open the root `.env` file.
-2. Change the host port mapping (e.g., `FRONTEND_PORT=8080`, `BACKEND_PORT=5002`).
-3. Re-run `docker compose up -d`.
+This project delivers:
+1. **Fully Executed Jupyter Notebook (`Urban_Traffic_Flow_Optimization.ipynb`)**:
+   - Structured step-by-step into 8 phases with 27 rich cells.
+   - **Every single cell contains in-depth analytical insights and real-world domain interpretations below its output.**
+   - Includes full data cleaning, anomaly detection, peak-hour analysis, correlation heatmaps, cyclical feature engineering, multi-model benchmarking, and residual diagnostics.
+2. **Multi-Model Machine Learning Tournament**:
+   - Compares 5 distinct regression algorithms: Linear Regression, Ridge Regression, Decision Tree, Random Forest, and Hist Gradient Boosting.
+   - **Champion Model**: **Hist Gradient Boosting Regressor** with **$R^2 = 96.07\%$**, $RMSE = 394.11$, and $MAE = 224.30$.
+3. **Saved Production Model Artifacts**:
+   - Serialized champion model saved to `models/traffic_model.pkl`.
+   - Complete metadata, feature lists, and benchmark metrics saved to `models/model_metadata.json`.
+4. **Interactive Glassmorphic Web Dashboard**:
+   - Modern, responsive web application (`app.py`, HTML5, CSS3, JavaScript).
+   - Real-time speedometer volume gauge, dynamic 24-hour flow curve chart, scenario presets (Morning Rush, Winter Blizzard, Midday Free Flow), and operational advisory warnings.
 
 ---
 
-## ☁️ Cloud Server Deployment Guide (AWS, DigitalOcean, Linode, GCP)
-
-Deploying StoreRate to a Linux cloud instance (Ubuntu/Debian) with Docker Compose:
-
-### 1. Provision Cloud Server & Firewall
-Ensure your VPS security group or firewall (`ufw`) allows ports:
-- **SSH**: Port `22`
-- **HTTP**: Port `80`
-- **HTTPS**: Port `443`
-
-```bash
-sudo ufw allow OpenSSH
-sudo ufw allow 80/tcp
-sudo ufw allow 443/tcp
-sudo ufw enable
-```
-
-### 2. Install Docker & Compose on the Server
-```bash
-# Update packages and install Docker
-sudo apt update && sudo apt install -y docker.io docker-compose-v2
-sudo systemctl enable --now docker
-sudo usermod -aG docker $USER
-# Log out and log back in for group changes to take effect
-```
-
-### 3. Clone Repository & Configure Environment
-```bash
-git clone https://github.com/RohanRathodOnline/StoreRate.git
-cd StoreRate
-
-# Create production environment file from template
-cp .env.example .env
-```
-
-### 4. Generate Production Secrets
-Generate a cryptographically secure 64-character hex string for `JWT_SECRET`:
-```bash
-openssl rand -hex 32
-```
-Edit `.env` using `nano .env` and update:
-- `JWT_SECRET`: Your generated hex key
-- `DB_PASSWORD`: Strong unique database password
-- `MYSQL_ROOT_PASSWORD`: Strong unique root password
-- `CORS_ORIGIN`: Your public domain (e.g. `https://yourdomain.com`)
-- `ADMIN_EMAIL` & `ADMIN_PASSWORD`: Your custom administrator credentials
-
-### 5. Launch Application
-```bash
-docker compose up -d --build
-```
-Verify all containers report `healthy`:
-```bash
-docker compose ps
-```
-
-### 6. SSL / HTTPS Termination (Recommended)
-To secure the public endpoint with free SSL certificates from Let's Encrypt:
-- **Option A (Cloudflare):** Point your domain DNS to the server IP and set Cloudflare SSL/TLS to "Full".
-- **Option B (Certbot Reverse Proxy):** Install Certbot on the host or place Nginx Proxy Manager / Traefik in front of port 80.
-
----
-
-## 💻 Local Development Setup (Without Docker)
-
-### Prerequisites
-- [Node.js](https://nodejs.org/) (v18 or higher recommended)
-- [MySQL](https://www.mysql.com/) or [XAMPP](https://www.apachefriends.org/) running locally on port 3306/3307
-
-### Backend Setup
-1. Navigate to the backend folder:
-   ```bash
-   cd backend
-   npm install
-   ```
-2. Configure `backend/.env`:
-   ```env
-   PORT=5000
-   DB_HOST=localhost
-   DB_PORT=3307
-   DB_USER=root
-   DB_PASSWORD=
-   DB_NAME=store_rating_app
-   JWT_SECRET=your_jwt_secret_key_here
-   ```
-3. Start the server:
-   ```bash
-   node server.js
-   ```
-
-### Frontend Setup
-1. Navigate to the frontend folder:
-   ```bash
-   cd frontend
-   npm install
-   npm run dev
-   ```
-2. Open [http://localhost:5173](http://localhost:5173) in your browser.
-
----
-
-## 🧪 Automated Testing
-
-The backend includes a comprehensive 38-scenario automated test suite verifying all business rules, role authorizations, validation constraints, and database transactions:
-
-### Run Tests Against Docker Stack:
-```powershell
-cd backend
-$env:API_BASE="http://localhost/api"
-node test_all_38_scenarios.js
-```
-
-### Run Tests Against Local Dev Server:
-```powershell
-cd backend
-node test_all_38_scenarios.js
-```
-
-All 38 test suites pass with 100% coverage across authentication, admin privileges, rating workflows, and user constraints.
-
----
-
-## 👥 Default Roles & Test Credentials
-
-| Role | Email | Password |
-|---|---|---|
-| **System Admin** | `admin@storerating.com` | `Admin@123` |
-| **Normal User** | `shopper@storerate.com` | `Shopper@123` |
-| **Store Owner** | `owner@storerate.com` | `Owner@123` |
-
----
-
-## 📄 License
-This project is open-source and available under the [MIT License](LICENSE).
-
-# StoreRate — Store Rating Platform
-
-StoreRate is a full-stack web application that allows users to browse registered stores and submit ratings from **1 to 5**.
-
-The application uses a **single login system with role-based access control (RBAC)** for three user roles:
-
-- System Administrator
-- Normal User
-- Store Owner
-
----
-
-## Features
-
-### System Administrator
-
-The System Administrator can:
-
-- Log in to the platform
-- View dashboard statistics:
-  - Total number of users
-  - Total number of stores
-  - Total number of submitted ratings
-- Add new stores
-- Add new normal users
-- Add new admin users
-- View all registered stores
-- View normal users and administrators
-- Search and filter users and stores
-- View user details
-- View a Store Owner's store rating
-- Sort supported table fields
-- Log out
-
-### Normal User
-
-Normal users can:
-
-- Sign up
-- Log in
-- Update their password
-- View all registered stores
-- Search stores by name and address
-- View:
-  - Store Name
-  - Address
-  - Overall Rating
-  - User's Submitted Rating
-- Submit a rating from 1 to 5
-- Modify their submitted rating
-- Log out
-
-### Store Owner
-
-Store Owners can:
-
-- Log in
-- Update their password
-- View their store's average rating
-- View users who submitted ratings for their store
-- Log out
-
----
-
-## User Roles
-
-| Role | Functionality |
-|---|---|
-| System Administrator | Manage users, stores and platform data |
-| Normal User | Browse stores and submit/modify ratings |
-| Store Owner | View store ratings and users who rated |
-
----
-
-## Application Architecture
+## 📂 Project Directory Structure
 
 ```text
-React 19 Frontend
-       |
-       | Axios + REST API
-       | JWT Bearer Token
-       v
-Express 5 Backend
-       |
-       +-- Authentication
-       |
-       +-- Validation
-       |
-       +-- Role-Based Authorization
-       |
-       +-- Controllers
-       |
-       v
-Sequelize ORM
-       |
-       v
-MySQL / MariaDB
+r:/Python Mini Project/
+├── Dataset/
+│   ├── Metro_Interstate_Traffic_Volume.csv           # Full official raw dataset (UCI Machine Learning Repository)
+│   └── Metro-Interstate-Traffic-Volume- Encoded.csv  # Cleaned and encoded dataset
+├── models/
+│   ├── traffic_model.pkl                             # Trained champion machine learning model (R² 96.07%)
+│   └── model_metadata.json                           # Metadata, feature names, category mappings, metrics
+├── static/
+│   ├── css/
+│   │   └── style.css                                 # Premium dark mode glassmorphic styling & animations
+│   └── js/
+│       └── app.js                                    # Real-time interactive UI, gauge, and canvas chart logic
+├── templates/
+│   └── index.html                                    # Web dashboard interface with simulation controls
+├── Urban_Traffic_Flow_Optimization.ipynb             # Master executed Jupyter Notebook with outputs & insights
+├── train_model.py                                    # Standalone script to train & export models
+├── generate_master_notebook.py                       # Automated builder script for the notebook
+├── app.py                                            # Flask web server & REST API
+├── run_dashboard.bat                                 # Windows one-click launcher for the web dashboard
+└── README.md                                         # Project documentation
+```
+
+---
+
+## 🏆 Machine Learning Model Benchmark Results
+
+Evaluated on **9,641 unseen hourly test records** from Interstate 94:
+
+| Model Architecture | Model Family | $R^2$ Score | Explained Variance | RMSE (Veh/Hr) | MAE (Veh/Hr) | Status |
+| :--- | :--- | :---: | :---: | :---: | :---: | :---: |
+| **Hist Gradient Boosting** | **Gradient Boosted Trees (LightGBM)** | **0.9607** | **96.07%** | **394.11** | **224.30** | 🏆 **Champion** |
+| **Random Forest Regressor** | Ensemble Bagging (100 Trees) | 0.9580 | 95.80% | 407.35 | 222.89 | Runner-up |
+| **Decision Tree Regressor** | Non-Linear CART (Depth 12) | 0.9411 | 94.11% | 482.73 | 267.94 | Strong Baseline |
+| **Ridge Regression ($L_2$)** | Regularized Linear | 0.7198 | 71.98% | 1052.49 | 822.89 | Baseline |
+| **Linear Regression (OLS)** | Ordinary Least Squares | 0.7198 | 71.98% | 1052.49 | 822.91 | Baseline |
+
+---
+
+## 💡 Key Research & Analytical Insights (हर Cell के Insights का सारांश)
+
+1. **Bimodal Commute Curves (पीक आवर्स)**:
+   - Traffic exhibits two daily surges: **Morning Rush (07:00 - 09:00 AM)** peaking at ~4,800 veh/hr and **Evening Rush (04:00 - 06:00 PM)** peaking at ~5,300 veh/hr.
+   - Overnight trough occurs between **01:00 AM and 04:00 AM** (< 500 veh/hr, ~88% reduction).
+2. **Weekday vs. Weekend Commute Divergence**:
+   - Weekdays have a classic sharp two-hump camel curve.
+   - Weekends follow a smooth unimodal bell curve peaking between 12:00 PM and 04:00 PM (~3,800 veh/hr).
+   - Sunday traffic is ~35% lower than mid-week Tuesday-Thursday traffic.
+3. **Weather Sensitivity & Highway Capacity**:
+   - Severe weather (Squalls, Heavy Snow, Thunderstorms) drops effective roadway capacity by **15% to 35%**.
+   - Sub-zero freezing temperatures ($< -15^\circ\text{C}$) reduce discretionary travel by ~12%.
+4. **Holiday Commute Collapse**:
+   - On state/national holidays (Thanksgiving, Christmas, Labor Day), the morning rush hour completely disappears, reducing morning volume by over 2,500 veh/hr.
+5. **Cyclical Feature Transformation ($\sin/\cos$)**:
+   - Standard integer hours treat 23:00 and 00:00 as 23 units apart. Projecting hours onto trigonometric unit circles ($\sin(2\pi t/24), \cos(2\pi t/24)$) maintains continuous mathematical proximity across the midnight boundary.
+6. **Data Cleaning & Sensor Anomalies**:
+   - Detected and rectified **0.0 Kelvin** temperature sensor dropouts using seasonal median imputation.
+   - Rectified an extreme **9,831.3 mm/hr** rainfall telemetry glitch by capping severe precipitation to 100 mm/hr.
+
+---
+
+## 🚀 How to Run the Project (प्रोजेक्ट कैसे चलाएं)
+
+### 1. Open and Run the Jupyter Notebook
+Open `Urban_Traffic_Flow_Optimization.ipynb` in VS Code or JupyterLab:
+```bash
+jupyter notebook Urban_Traffic_Flow_Optimization.ipynb
+```
+All outputs, graphs, tables, and analytical explanations are already executed and saved inside the notebook.
+
+### 2. Run the Interactive Web Dashboard
+You can run the web app with a single click:
+- **Option A**: Double-click `run_dashboard.bat`.
+- **Option B**: Run from command prompt:
+```bash
+py -3.11 app.py
+```
+Open your browser and navigate to:
+```text
+http://127.0.0.1:5000
+```
+
+### 3. Retrain Models
+To retrain and re-export the models:
+```bash
+py -3.11 train_model.py
+```
+
+---
+
+## 🏛️ Strategic Urban Traffic Management Recommendations
+1. **Dynamic On-Ramp Metering**: Adjust traffic light timing at highway access ramps dynamically 15 minutes prior to predicted peak build-up.
+2. **Predictive Congestion Tolling**: Implement variable pricing ahead of anticipated 4,800+ veh/hr periods to incentivize 10-15% of commuters to shift travel times.
+3. **Preemptive Winter Dispatch**: Deploy snowplows and road salting trucks 60 minutes before predicted snowfall during rush hours.
+4. **Variable Speed Limit (VSL) Automation**: Lower advisory highway speed limits by 10 mph automatically during heavy rain or freezing conditions.
