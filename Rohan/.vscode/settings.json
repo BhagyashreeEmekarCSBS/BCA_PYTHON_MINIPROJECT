@@ -1,7 +1,0 @@
-{
-    "python.defaultInterpreterPath": "C:\\Users\\Rohan\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
-    "python.analysis.extraPaths": [
-        "C:\\Users\\Rohan\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages"
-    ],
-    "python.analysis.typeCheckingMode": "off"
-}
