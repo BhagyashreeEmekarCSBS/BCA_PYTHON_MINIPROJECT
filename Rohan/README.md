@@ -100,10 +100,8 @@ storerate-mysql      mysql:8.0           Up (healthy)              3306/tcp
 ```
 
 ### 4. Access URLs
-- **Frontend Web App**: [http://localhost](http://localhost) (Port 80)
-- **Login Page**: [http://localhost/login](http://localhost/login)
-- **API (Proxied through Nginx)**: [http://localhost/api/health](http://localhost/api/health)
-- **Backend Direct Access**: [http://localhost:5001/api/health](http://localhost:5001/api/health)
+local host url after running the projects
+
 
 ### 5. Managing the Compose Stack
 - **View Live Logs**:
