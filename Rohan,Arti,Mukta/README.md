@@ -66,9 +66,9 @@ Evaluated on **9,641 unseen hourly test records** from Interstate 94:
 
 ---
 
-## 💡 Key Research & Analytical Insights (हर Cell के Insights का सारांश)
+## 💡 Key Research & Analytical Insights
 
-1. **Bimodal Commute Curves (पीक आवर्स)**:
+1. **Bimodal Commute Curves :
    - Traffic exhibits two daily surges: **Morning Rush (07:00 - 09:00 AM)** peaking at ~4,800 veh/hr and **Evening Rush (04:00 - 06:00 PM)** peaking at ~5,300 veh/hr.
    - Overnight trough occurs between **01:00 AM and 04:00 AM** (< 500 veh/hr, ~88% reduction).
 2. **Weekday vs. Weekend Commute Divergence**:
@@ -88,7 +88,7 @@ Evaluated on **9,641 unseen hourly test records** from Interstate 94:
 
 ---
 
-## 🚀 How to Run the Project (प्रोजेक्ट कैसे चलाएं)
+## 🚀 How to Run the Project 
 
 ### 1. Open and Run the Jupyter Notebook
 Open `Urban_Traffic_Flow_Optimization.ipynb` in VS Code or JupyterLab:
