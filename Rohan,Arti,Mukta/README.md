@@ -4,7 +4,7 @@ An end-to-end Machine Learning and Urban Data Science project for analyzing hist
 
 ---
 
-## 📌 Project Overview / प्रोजेक्ट का विवरण
+## 📌 Project Overview 
 
 Increasing traffic congestion is a major problem in urban areas. Traffic volume depends on multiple interrelated dynamic factors such as time of day, weather conditions, temperature, holidays, and day of the week.
 
@@ -116,6 +116,10 @@ py -3.11 train_model.py
 ```
 
 ---
+How Exactly It looks Like
+
+<img width="2880" height="3741" alt="image" src="https://github.com/user-attachments/assets/a92fa655-668c-4f62-8b92-1ace52a7f649" />
+
 
 ## 🏛️ Strategic Urban Traffic Management Recommendations
 1. **Dynamic On-Ramp Metering**: Adjust traffic light timing at highway access ramps dynamically 15 minutes prior to predicted peak build-up.
