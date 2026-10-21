@@ -1,0 +1,4 @@
+CustomerID,Tenure,OrderCount,DaySinceLastOrder,Complain,SatisfactionScore,HourSpendOnApp,CashbackAmount,CityTier,PreferredLoginDevice,PreferredPaymentMode,ChurnProbability,PredictedChurn,RiskLevel
+C90001,15,5,12,1,4,2.5,180.5,1,Mobile Phone,Debit Card,0.5227958564117736,1,Medium
+C90002,2,3,45,0,2,1.2,120.0,3,Computer,Credit Card,0.5257145236510429,1,Medium
+C90003,30,8,4,0,5,3.8,210.7,2,Mobile Phone,UPI,0.11340456817736617,0,Low
