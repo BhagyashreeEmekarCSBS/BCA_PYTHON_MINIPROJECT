@@ -1,0 +1,41 @@
+student_id,study_hours_per_day,attendance_percent,previous_marks,assignment_score,final_marks,parent_education_level,internet_access,cluster
+S001,2,58,62,55,60,Secondary,Limited,1
+S002,5,92,88,90,91,Graduate or above,Yes,3
+S003,1,45,50,48,46,Below secondary,No,2
+S004,4,80,76,83,81,Higher secondary,Yes,4
+S005,3,70,68,72,71,Higher secondary,Yes,1
+S006,1,35,42,38,40,Below secondary,No,2
+S007,6,96,94,97,95,Graduate or above,Yes,3
+S008,2,61,58,63,60,Secondary,Limited,1
+S009,4,77,82,79,80,Higher secondary,Yes,4
+S010,3,65,70,67,69,Secondary,Limited,1
+S011,1,52,48,55,51,Secondary,Limited,2
+S012,5,87,91,89,90,Graduate or above,Yes,3
+S013,2,55,60,57,58,Secondary,Limited,1
+S014,4,84,79,86,83,Higher secondary,Yes,4
+S015,0,40,44,42,41,Below secondary,No,2
+S016,3,73,75,71,74,Higher secondary,Yes,4
+S017,2,64,62,66,65,Secondary,Limited,1
+S018,6,93,96,94,95,Graduate or above,Yes,3
+S019,1,49,53,50,52,Below secondary,No,2
+S020,5,89,86,92,90,Graduate or above,Yes,3
+S021,2,60,65,61,63,Secondary,Limited,1
+S022,4,78,81,76,79,Higher secondary,Yes,4
+S023,3,69,66,70,68,Higher secondary,Limited,1
+S024,0,32,39,35,36,Below secondary,No,2
+S025,5,90,92,88,91,Graduate or above,Yes,3
+S026,1,56,59,54,57,Secondary,Limited,1
+S027,3,74,72,77,75,Higher secondary,Yes,4
+S028,2,62,67,64,65,Secondary,Limited,1
+S029,4,82,85,80,83,Higher secondary,Yes,4
+S030,1,46,43,49,47,Below secondary,No,2
+S031,6,98,95,96,97,Graduate or above,Yes,3
+S032,2,59,56,61,58,Secondary,Limited,1
+S033,3,71,73,69,72,Higher secondary,Yes,1
+S034,0,38,41,37,39,Below secondary,No,2
+S035,4,86,83,88,85,Higher secondary,Yes,4
+S036,2,63,61,65,64,Secondary,Limited,1
+S037,5,88,90,87,89,Graduate or above,Yes,3
+S038,1,51,55,52,54,Secondary,Limited,2
+S039,3,68,71,66,70,Higher secondary,Yes,1
+S040,4,79,77,82,80,Higher secondary,Yes,4

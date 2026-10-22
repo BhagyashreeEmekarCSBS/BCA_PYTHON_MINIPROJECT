@@ -1,0 +1,41 @@
+student_id,study_hours_per_day,attendance_percent,previous_marks,assignment_score,final_marks,parent_education_level,internet_access,cluster,learning_recommendation
+S001,2,58,62,55,60,Secondary,Limited,1,Improve attendance and discuss missed classes with a teacher. Practise assignment questions and ask for feedback.
+S002,5,92,88,90,91,Graduate or above,Yes,3,Maintain the current habits and try enrichment or peer-learning activities.
+S003,1,45,50,48,46,Below secondary,No,2,Improve attendance and discuss missed classes with a teacher. Start with a consistent daily study routine of short sessions. Practise assignment questions and ask for feedback. Revise foundational topics and take regular low-stakes practice tests.
+S004,4,80,76,83,81,Higher secondary,Yes,4,Maintain the current habits and try enrichment or peer-learning activities.
+S005,3,70,68,72,71,Higher secondary,Yes,1,Maintain a balanced routine and monitor progress every few weeks.
+S006,1,35,42,38,40,Below secondary,No,2,Improve attendance and discuss missed classes with a teacher. Start with a consistent daily study routine of short sessions. Practise assignment questions and ask for feedback. Revise foundational topics and take regular low-stakes practice tests.
+S007,6,96,94,97,95,Graduate or above,Yes,3,Maintain the current habits and try enrichment or peer-learning activities.
+S008,2,61,58,63,60,Secondary,Limited,1,Improve attendance and discuss missed classes with a teacher. Revise foundational topics and take regular low-stakes practice tests.
+S009,4,77,82,79,80,Higher secondary,Yes,4,Maintain a balanced routine and monitor progress every few weeks.
+S010,3,65,70,67,69,Secondary,Limited,1,Improve attendance and discuss missed classes with a teacher.
+S011,1,52,48,55,51,Secondary,Limited,2,Improve attendance and discuss missed classes with a teacher. Start with a consistent daily study routine of short sessions. Practise assignment questions and ask for feedback. Revise foundational topics and take regular low-stakes practice tests.
+S012,5,87,91,89,90,Graduate or above,Yes,3,Maintain the current habits and try enrichment or peer-learning activities.
+S013,2,55,60,57,58,Secondary,Limited,1,Improve attendance and discuss missed classes with a teacher. Practise assignment questions and ask for feedback. Revise foundational topics and take regular low-stakes practice tests.
+S014,4,84,79,86,83,Higher secondary,Yes,4,Maintain the current habits and try enrichment or peer-learning activities.
+S015,0,40,44,42,41,Below secondary,No,2,Improve attendance and discuss missed classes with a teacher. Start with a consistent daily study routine of short sessions. Practise assignment questions and ask for feedback. Revise foundational topics and take regular low-stakes practice tests.
+S016,3,73,75,71,74,Higher secondary,Yes,4,Maintain a balanced routine and monitor progress every few weeks.
+S017,2,64,62,66,65,Secondary,Limited,1,Improve attendance and discuss missed classes with a teacher.
+S018,6,93,96,94,95,Graduate or above,Yes,3,Maintain the current habits and try enrichment or peer-learning activities.
+S019,1,49,53,50,52,Below secondary,No,2,Improve attendance and discuss missed classes with a teacher. Start with a consistent daily study routine of short sessions. Practise assignment questions and ask for feedback. Revise foundational topics and take regular low-stakes practice tests.
+S020,5,89,86,92,90,Graduate or above,Yes,3,Maintain the current habits and try enrichment or peer-learning activities.
+S021,2,60,65,61,63,Secondary,Limited,1,Improve attendance and discuss missed classes with a teacher.
+S022,4,78,81,76,79,Higher secondary,Yes,4,Maintain a balanced routine and monitor progress every few weeks.
+S023,3,69,66,70,68,Higher secondary,Limited,1,Improve attendance and discuss missed classes with a teacher.
+S024,0,32,39,35,36,Below secondary,No,2,Improve attendance and discuss missed classes with a teacher. Start with a consistent daily study routine of short sessions. Practise assignment questions and ask for feedback. Revise foundational topics and take regular low-stakes practice tests.
+S025,5,90,92,88,91,Graduate or above,Yes,3,Maintain the current habits and try enrichment or peer-learning activities.
+S026,1,56,59,54,57,Secondary,Limited,1,Improve attendance and discuss missed classes with a teacher. Start with a consistent daily study routine of short sessions. Practise assignment questions and ask for feedback. Revise foundational topics and take regular low-stakes practice tests.
+S027,3,74,72,77,75,Higher secondary,Yes,4,Maintain a balanced routine and monitor progress every few weeks.
+S028,2,62,67,64,65,Secondary,Limited,1,Improve attendance and discuss missed classes with a teacher.
+S029,4,82,85,80,83,Higher secondary,Yes,4,Maintain the current habits and try enrichment or peer-learning activities.
+S030,1,46,43,49,47,Below secondary,No,2,Improve attendance and discuss missed classes with a teacher. Start with a consistent daily study routine of short sessions. Practise assignment questions and ask for feedback. Revise foundational topics and take regular low-stakes practice tests.
+S031,6,98,95,96,97,Graduate or above,Yes,3,Maintain the current habits and try enrichment or peer-learning activities.
+S032,2,59,56,61,58,Secondary,Limited,1,Improve attendance and discuss missed classes with a teacher. Revise foundational topics and take regular low-stakes practice tests.
+S033,3,71,73,69,72,Higher secondary,Yes,1,Maintain a balanced routine and monitor progress every few weeks.
+S034,0,38,41,37,39,Below secondary,No,2,Improve attendance and discuss missed classes with a teacher. Start with a consistent daily study routine of short sessions. Practise assignment questions and ask for feedback. Revise foundational topics and take regular low-stakes practice tests.
+S035,4,86,83,88,85,Higher secondary,Yes,4,Maintain the current habits and try enrichment or peer-learning activities.
+S036,2,63,61,65,64,Secondary,Limited,1,Improve attendance and discuss missed classes with a teacher.
+S037,5,88,90,87,89,Graduate or above,Yes,3,Maintain the current habits and try enrichment or peer-learning activities.
+S038,1,51,55,52,54,Secondary,Limited,2,Improve attendance and discuss missed classes with a teacher. Start with a consistent daily study routine of short sessions. Practise assignment questions and ask for feedback. Revise foundational topics and take regular low-stakes practice tests.
+S039,3,68,71,66,70,Higher secondary,Yes,1,Improve attendance and discuss missed classes with a teacher.
+S040,4,79,77,82,80,Higher secondary,Yes,4,Maintain a balanced routine and monitor progress every few weeks.
