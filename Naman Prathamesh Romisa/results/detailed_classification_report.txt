@@ -1,0 +1,33 @@
+
+All Features
+              precision    recall  f1-score   support
+
+           0       0.97      1.00      0.99       531
+           1       0.99      0.96      0.97       323
+
+    accuracy                           0.98       854
+   macro avg       0.98      0.98      0.98       854
+weighted avg       0.98      0.98      0.98       854
+
+
+Selected Features
+              precision    recall  f1-score   support
+
+           0       0.98      1.00      0.99       531
+           1       0.99      0.96      0.98       323
+
+    accuracy                           0.98       854
+   macro avg       0.99      0.98      0.98       854
+weighted avg       0.98      0.98      0.98       854
+
+
+PCA Features
+              precision    recall  f1-score   support
+
+           0       0.94      0.97      0.96       531
+           1       0.94      0.91      0.92       323
+
+    accuracy                           0.94       854
+   macro avg       0.94      0.94      0.94       854
+weighted avg       0.94      0.94      0.94       854
+

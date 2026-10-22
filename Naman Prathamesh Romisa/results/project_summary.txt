@@ -1,0 +1,22 @@
+CREDIT RISK ASSESSMENT USING FEATURE SELECTION & REDUCTION
+
+Dataset records: 4269
+Original predictor features: 11
+Selected features: 10
+PCA components retaining at least 95% variance: 8
+
+Model comparison:
+           Method  Number of Features  Accuracy (%)  Precision (%)  Recall (%)  F1-Score (%)
+     All Features                  11         98.13          99.36       95.67         97.48
+Selected Features                  10         98.36          99.36       96.28         97.80
+     PCA Features                   8         94.38          94.21       90.71         92.43
+
+Best test accuracy in this comparison:
+Method                Selected Features
+Number of Features                   10
+Accuracy (%)                      98.36
+Precision (%)                     99.36
+Recall (%)                        96.28
+F1-Score (%)                       97.8
+
+Note: This dataset predicts loan approval/rejection, not actual future loan default.

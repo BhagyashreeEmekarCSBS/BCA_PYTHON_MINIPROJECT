@@ -1,0 +1,4 @@
+Method,Number of Features,Accuracy (%),Precision (%),Recall (%),F1-Score (%)
+All Features,11,98.13,99.36,95.67,97.48
+Selected Features,10,98.36,99.36,96.28,97.8
+PCA Features,8,94.38,94.21,90.71,92.43

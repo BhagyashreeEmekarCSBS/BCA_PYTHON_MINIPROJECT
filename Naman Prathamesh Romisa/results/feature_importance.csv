@@ -1,0 +1,12 @@
+Feature,Importance
+cibil_score,0.8143902717241961
+loan_term,0.05925738098164702
+loan_amount,0.0320087496930652
+income_annum,0.01845485075348812
+luxury_assets_value,0.017640116680089028
+commercial_assets_value,0.016459751509569315
+residential_assets_value,0.01516258142899584
+bank_asset_value,0.014279228646054017
+no_of_dependents,0.007726630929223394
+self_employed_Yes,0.0025424451157318923
+education_Not Graduate,0.0020779925379400227
