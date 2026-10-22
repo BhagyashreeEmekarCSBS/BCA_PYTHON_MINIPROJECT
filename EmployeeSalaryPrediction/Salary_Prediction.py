@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # Step 1: Load the dataset
-df = pd.read_csv("Salary_Data.csv")
+df = pd.read_csv("Salary_data.csv")
 
 # Step 2: Display the first five records
 print("First five records:")
